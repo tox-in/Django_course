@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,5 +12,21 @@
         <li>{{tour}}</li>
         {% endfor %}
     </ul>
+</body>
+</html> {% endcomment %}
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django is Awesome</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to Django</h1>
+    <p>Django makes it easier to build better web apps more quickly and with less code!</p>
+    <script src="{% static "js/script.js" %}"></script>
+    <img src="{% static "images/logo.png" %}" alt=""></img>
 </body>
 </html>
